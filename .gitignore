@@ -1,0 +1,5 @@
+.wing
+.vscode
+bin-debug
+bin-release
+libs
