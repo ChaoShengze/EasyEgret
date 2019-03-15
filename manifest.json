@@ -12,6 +12,10 @@
 		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
-		"bin-debug/ThemeAdapter.js"
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/App/App.js",
+		"bin-debug/App/Display.js",
+		"bin-debug/App/Math.js",
+		"bin-debug/App/Extra/Screenshot.js"
 	]
 }

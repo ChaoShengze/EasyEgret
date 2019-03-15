@@ -3,10 +3,10 @@
  */
 namespace App.Extra.Screenshot {
     /**
-         * 将一个egret.DisplayObject对象导出为egret.RenderTexture纹理.
-         * @param item 显示对象
-         * @returns egret.RenderTexture 截图的纹理
-         */
+     * 将一个egret.DisplayObject对象导出为egret.RenderTexture纹理.
+     * @param item 显示对象
+     * @returns egret.RenderTexture 截图的纹理
+     */
     export function takeShot(item: egret.DisplayObject): egret.RenderTexture {
         let renderTexture: egret.RenderTexture = new egret.RenderTexture();
         renderTexture.drawToTexture(item);
@@ -50,13 +50,12 @@ namespace App.Extra.Screenshot {
      */
     export function loadImgFromBase64(loadByName: boolean = true, nameOrBase64: string, bitmap: egret.Bitmap): void {
         let str = (loadByName ? egret.localStorage.getItem(nameOrBase64) : nameOrBase64);
-
-        var img: HTMLImageElement = new Image();
+        let img: HTMLImageElement = new Image();
         img.src = str;
         img.crossOrigin = '*';
         img.onload = function () {
-            var texture = new egret.Texture();
-            var bitmapdata = new egret.BitmapData(img);
+            let texture = new egret.Texture();
+            let bitmapdata = new egret.BitmapData(img);
             texture._setBitmapData(bitmapdata);
             bitmap.texture = texture;
         }

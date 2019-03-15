@@ -29,7 +29,6 @@
 
 class Main extends eui.UILayer {
 
-
     protected createChildren(): void {
         super.createChildren();
 
@@ -50,7 +49,6 @@ class Main extends eui.UILayer {
         let assetAdapter = new AssetAdapter();
         egret.registerImplementation("eui.IAssetAdapter", assetAdapter);
         egret.registerImplementation("eui.IThemeAdapter", new ThemeAdapter());
-
 
         this.runGame().catch(e => {
             console.log(e);
@@ -126,7 +124,6 @@ class Main extends eui.UILayer {
         line.x = 172;
         line.y = 61;
         this.addChild(line);
-
 
         let colorLabel = new egret.TextField();
         colorLabel.textColor = 0xffffff;
